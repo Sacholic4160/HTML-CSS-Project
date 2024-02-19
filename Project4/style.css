@@ -1,0 +1,135 @@
+html ,body{
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.frontpage{
+background-image: url(images/background\ image.jpg);
+min-height: 607px;
+
+}
+.frontpage{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container{
+    color: red;
+    padding: 60px 60px;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.sectiontwo{
+color: white;
+   padding: 80px 80px;
+   text-align: center;
+    letter-spacing: 4px;
+   
+    background-color:navy;
+}
+h2{
+    font-size: 30px;
+}
+h1{
+    font-size: 40px;
+}
+h2,h1{
+    display: inline;
+}
+.Work{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    max-width: 1000px;
+    margin: 30px auto;
+
+
+}
+.grid_items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 320px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(1, 2, 3, .1);
+    transition:  0.2 ease-in-out();
+}
+.card:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out();
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, .1);
+}
+.content_container{
+    padding: 10px;
+}
+.content_container{
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.second_last{
+    display: flex;
+    min-height: 200px;
+   
+}
+.contact{
+    background-color: gold;
+    padding: 10px 10px;
+
+}
+.about{
+    background-color: silver;
+    padding: 10px 10px;
+   
+}
+.contact h3,.about h3{
+    font-size: 30px;
+    font-weight: 200;
+}
+footer {
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+footer h2{
+    color: black;
+    text-transform: uppercase;
+    margin: 460px;
+    text-align: center;
+}
+@media (max-width: 786px) {
+    .container {
+      min-height: 50vh;
+    }
+    .text_container {
+      padding: 10px 0;
+      text-align: center;
+    }
+    .textbg {
+      font-size: 32px;
+    }
+    .sectiontwo h2 {
+      font-size: 24px;
+    }
+    .sectiontwo h2 span {
+      font-weight: 400;
+      font-size: 32px;
+    }
+    .second_last {
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 32px;
+    }
+    .about h2,
+    .contact h2 {
+      font-size: 32px;
+    }
+  }
